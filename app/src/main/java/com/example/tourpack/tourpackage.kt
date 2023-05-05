@@ -3,6 +3,7 @@ package com.example.tourpack
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 
 class tourpackage : AppCompatActivity() {
@@ -10,64 +11,22 @@ class tourpackage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tourpackage)
 
-        val imgCateActbt1 = findViewById<ImageView>(R.id.imgCate1)
-        imgCateActbt1.setOnClickListener {
-            val Intent = Intent(this,packagedetails::class.java)
-            startActivity(Intent)
+        val clickListener = View.OnClickListener {
+            val intent = Intent(this, packagedetails::class.java)
+            startActivity(intent)
         }
 
-        val imgCateActbt2 = findViewById<ImageView>(R.id.imgCate2)
-        imgCateActbt2.setOnClickListener {
-            val Intent = Intent(this,packagedetails::class.java)
-            startActivity(Intent)
-        }
+        // Set the click listener to all image views
+        findViewById<ImageView>(R.id.imgCate1).setOnClickListener(clickListener)
+        findViewById<ImageView>(R.id.imgCate2).setOnClickListener(clickListener)
+        findViewById<ImageView>(R.id.imgCate3).setOnClickListener(clickListener)
+        findViewById<ImageView>(R.id.imgCate4).setOnClickListener(clickListener)
+        findViewById<ImageView>(R.id.package1).setOnClickListener(clickListener)
+        findViewById<ImageView>(R.id.package2).setOnClickListener(clickListener)
+        findViewById<ImageView>(R.id.package3).setOnClickListener(clickListener)
+        findViewById<ImageView>(R.id.package4).setOnClickListener(clickListener)
+        findViewById<ImageView>(R.id.package5).setOnClickListener(clickListener)
+        findViewById<ImageView>(R.id.package6).setOnClickListener(clickListener)
 
-        val imgCateActbt3 = findViewById<ImageView>(R.id.imgCate3)
-        imgCateActbt3.setOnClickListener {
-            val Intent = Intent(this,packagedetails::class.java)
-            startActivity(Intent)
-        }
-
-        val imgCateActbt4 = findViewById<ImageView>(R.id.imgCate4)
-        imgCateActbt4.setOnClickListener {
-            val Intent = Intent(this,packagedetails::class.java)
-            startActivity(Intent)
-        }
-
-        val packageActbt1 = findViewById<ImageView>(R.id.package1)
-        packageActbt1.setOnClickListener {
-            val Intent = Intent(this,packagedetails::class.java)
-            startActivity(Intent)
-        }
-
-        val packageActbt2 = findViewById<ImageView>(R.id.package2)
-        packageActbt2.setOnClickListener {
-            val Intent = Intent(this,packagedetails::class.java)
-            startActivity(Intent)
-        }
-
-        val packageActbt3 = findViewById<ImageView>(R.id.package3)
-        packageActbt3.setOnClickListener {
-            val Intent = Intent(this,packagedetails::class.java)
-            startActivity(Intent)
-        }
-
-        val packageActbt4 = findViewById<ImageView>(R.id.package4)
-        packageActbt4.setOnClickListener {
-            val Intent = Intent(this,packagedetails::class.java)
-            startActivity(Intent)
-        }
-
-        val packageActbt5 = findViewById<ImageView>(R.id.package5)
-        packageActbt5.setOnClickListener {
-            val Intent = Intent(this,packagedetails::class.java)
-            startActivity(Intent)
-        }
-
-        val packageActbt6 = findViewById<ImageView>(R.id.package6)
-        packageActbt6.setOnClickListener {
-            val Intent = Intent(this,packagedetails::class.java)
-            startActivity(Intent)
-        }
     }
 }
