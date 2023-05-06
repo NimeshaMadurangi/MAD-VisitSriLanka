@@ -125,7 +125,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="160dp">
+                android:layout_height="160dp"
+                android:layout_marginTop="15dp">
 
                 <ImageView
                     android:id="@+id/package1"
@@ -153,11 +154,11 @@
                     android:src="@drawable/cardview_p3" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="76dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="302dp"
+                    android:layout_marginEnd="292dp"
                     android:layout_marginBottom="2dp"
                     android:text="Package1"
                     android:textColor="#000"
@@ -165,11 +166,11 @@
                     android:textStyle="bold|italic" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="79dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="176dp"
+                    android:layout_marginEnd="163dp"
                     android:layout_marginBottom="2dp"
                     android:text="Package2"
                     android:textColor="#000"
@@ -177,11 +178,11 @@
                     android:textStyle="bold|italic" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="76dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="42dp"
+                    android:layout_marginEnd="32dp"
                     android:layout_marginBottom="2dp"
                     android:text="Package3"
                     android:textColor="#000"
@@ -221,23 +222,23 @@
                     android:src="@drawable/cardview_8" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="77dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="302dp"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="297dp"
+                    android:layout_marginBottom="3dp"
                     android:text="Package4"
                     android:textColor="#000"
                     android:textSize="15sp"
                     android:textStyle="bold|italic" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="76dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="173dp"
+                    android:layout_marginEnd="163dp"
                     android:layout_marginBottom="2dp"
                     android:text="Package5"
                     android:textColor="#000"
@@ -245,11 +246,11 @@
                     android:textStyle="bold|italic" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="76dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="47dp"
+                    android:layout_marginEnd="37dp"
                     android:layout_marginBottom="3dp"
                     android:text="Package6"
                     android:textColor="#000"
@@ -260,52 +261,5 @@
 
         </LinearLayout>
     </ScrollView>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="414dp"
-        android:layout_height="63dp"
-        android:paddingTop="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <View
-            android:id="@+id/divider"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="16dp"
-            android:background="@color/material_dynamic_neutral70"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.271"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/divider"
-            app:layout_constraintVertical_bias="0.116"
-            app:srcCompat="@drawable/baseline_home_242" />
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:paddingBottom="5dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.758"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/divider"
-            app:layout_constraintVertical_bias="0.131"
-            app:srcCompat="@drawable/baseline_person_242" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

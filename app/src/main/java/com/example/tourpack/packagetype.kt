@@ -10,6 +10,9 @@ class packagetype : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_packagetype)
 
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.title = ""
+
         val cardActbt1 = findViewById<CardView>(R.id.cdView1)
         cardActbt1.setOnClickListener {
             val Intent = Intent(this,foreignpackage::class.java)

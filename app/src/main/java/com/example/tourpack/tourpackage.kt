@@ -11,6 +11,9 @@ class tourpackage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tourpackage)
 
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.title = ""
+
         val clickListener = View.OnClickListener {
             val intent = Intent(this, packagedetails::class.java)
             startActivity(intent)

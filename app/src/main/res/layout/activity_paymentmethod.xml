@@ -307,6 +307,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cd1"
                 android:layout_width="100dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="40dp"
@@ -331,6 +332,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cd2"
                 android:layout_width="100dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="10dp"
@@ -355,6 +357,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cd3"
                 android:layout_width="100dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="10dp"
