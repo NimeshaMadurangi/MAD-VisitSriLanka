@@ -7,6 +7,8 @@ import android.widget.LinearLayout
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import com.example.tourpack.databinding.ActivityMainBinding
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,6 +18,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val firebase : DatabaseReference = FirebaseDatabase.getInstance().getReference()
+
         replaceFragment(Home())
 
         binding.bottomNavigationView.setOnItemSelectedListener {

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "300192155287",
+    "project_id": "visitsrilanka-ae668",
+    "storage_bucket": "visitsrilanka-ae668.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300192155287:android:f87451bb4eccc2e3d0cbd2",
+        "android_client_info": {
+          "package_name": "com.example.tourpack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300192155287-chog99h4t7ecos8c5h2ks9enq7oq4l5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG1PvIOyGQI_x3VsPGZUiOElmcoo7qKP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300192155287-chog99h4t7ecos8c5h2ks9enq7oq4l5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

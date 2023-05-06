@@ -10,6 +10,9 @@ class foreignpackage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_foreignpackage)
 
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.title = ""
+
         val cardActbt3 = findViewById<CardView>(R.id.cdView3)
         cardActbt3.setOnClickListener {
             val Intent = Intent(this,tourpackage::class.java)
