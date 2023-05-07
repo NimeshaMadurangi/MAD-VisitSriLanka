@@ -8,6 +8,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TourPack">
         <activity
+            android:name=".Delete"
+            android:exported="false" />
+        <activity
+            android:name=".Update"
+            android:exported="false" />
+        <activity
             android:name=".Upload"
             android:exported="false" />
         <activity

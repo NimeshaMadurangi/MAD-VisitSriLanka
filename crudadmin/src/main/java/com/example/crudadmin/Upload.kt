@@ -20,20 +20,20 @@ class Upload : AppCompatActivity() {
 
         binding.saveButton.setOnClickListener {
 
-            val number = binding.uploadNumber.text.toString()
             val name = binding.uploadName.text.toString()
             val description = binding.uploadDescription.text.toString()
             val price = binding.uploadPrice.text.toString()
             val rating = binding.uploadRating.text.toString()
+            val number = binding.uploadNumber.text.toString()
 
             database = FirebaseDatabase.getInstance().getReference("Packages")
-            val packages = PackageData(number,name,description,price,rating)
-            database.child(rating).setValue(packages).addOnSuccessListener {
-                binding.uploadNumber.text.clear()
+            val packages = PackageData(name,description,price,rating,number)
+            database.child(number).setValue(packages).addOnSuccessListener {
                 binding.uploadName.text.clear()
                 binding.uploadDescription.text.clear()
                 binding.uploadPrice.text.clear()
                 binding.uploadRating.text.clear()
+                binding.uploadNumber.text.clear()
 
                 Toast.makeText(this,"Saved", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this@Upload, MainActivity::class.java)
