@@ -19,8 +19,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val firebase : DatabaseReference = FirebaseDatabase.getInstance().getReference()
-
         replaceFragment(Home())
 
         binding.bottomNavigationView.setOnItemSelectedListener {

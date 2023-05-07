@@ -20,5 +20,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         })
+
+        binding.mainUpdate.setOnClickListener(View.OnClickListener{
+            val intent = Intent(this@MainActivity, Update::class.java)
+            startActivity(intent)
+        })
+
+        binding.mainDelete.setOnClickListener(View.OnClickListener{
+            val intent = Intent(this@MainActivity, Delete::class.java)
+            startActivity(intent)
+        })
     }
 }
