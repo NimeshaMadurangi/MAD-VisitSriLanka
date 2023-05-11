@@ -1,7 +1,3 @@
-
-
-https://github.com/NimeshaMadurangi/MAD-VisitSriLanka/assets/99236417/618a09ef-d678-45c5-aaa3-aea9971188a2
-
 # MAD-VisitSriLanka
 Visit Sri Lanka is a mobile application developed by a group of 2nd year 2nd semester student for Mobile Application Development(MAD) project from the Sri Lanka Institue of Information Technology(SLIIT)
 
@@ -16,3 +12,5 @@ Nimesha Karunarathna
 Naveen Jayaneththi  
 Ruvini Ubeysinghe  
 Sadil Dissanayaka
+
+https://github.com/NimeshaMadurangi/MAD-VisitSriLanka/assets/99236417/618a09ef-d678-45c5-aaa3-aea9971188a2
