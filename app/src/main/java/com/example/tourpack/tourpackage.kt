@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class tourpackage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +31,12 @@ class tourpackage : AppCompatActivity() {
         findViewById<ImageView>(R.id.package4).setOnClickListener(clickListener)
         findViewById<ImageView>(R.id.package5).setOnClickListener(clickListener)
         findViewById<ImageView>(R.id.package6).setOnClickListener(clickListener)
+
+        val fabAct= findViewById<FloatingActionButton>(R.id.floatingActionButton)
+        fabAct.setOnClickListener {
+            val Intent = Intent(this,retrievedata::class.java)
+            startActivity(Intent)
+        }
 
     }
 }
