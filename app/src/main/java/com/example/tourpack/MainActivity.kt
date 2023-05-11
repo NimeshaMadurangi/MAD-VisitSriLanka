@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         replaceFragment(Home())
 
         binding.bottomNavigationView.setOnItemSelectedListener {
@@ -47,5 +46,9 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.commit()
 
     }
+
+}
+
+class ActivityMainBinding {
 
 }
