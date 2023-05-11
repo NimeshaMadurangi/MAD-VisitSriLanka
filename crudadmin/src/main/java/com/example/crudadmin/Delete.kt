@@ -28,7 +28,7 @@ class Delete : AppCompatActivity() {
     }
 
     private fun deleteData(number: String) {
-        database = FirebaseDatabase.getInstance().getReference("Users")
+        database = FirebaseDatabase.getInstance().getReference("Packages")
         database.child(number).removeValue().addOnSuccessListener {
             binding.uploadNumber.text.clear()
             Toast.makeText(this, "Deleted", Toast.LENGTH_SHORT).show()
