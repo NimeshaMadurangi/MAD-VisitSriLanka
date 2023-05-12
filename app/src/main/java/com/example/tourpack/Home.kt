@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.TextView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -54,6 +55,20 @@ class Home : Fragment() {
             // Start the activity using the Intent object
             startActivity(intent)
         }
+
+
+        // Find the button in the fragment's layout file
+        val myimg = view.findViewById<TextView>(R.id.textView4)
+
+        // Set a click listener for the button
+        myimg.setOnClickListener {
+            // Create an Intent object for the activity you want to open
+            val intent = Intent(activity, gallery::class.java)
+
+            // Start the activity using the Intent object
+            startActivity(intent)
+        }
+
     }
 
     companion object {

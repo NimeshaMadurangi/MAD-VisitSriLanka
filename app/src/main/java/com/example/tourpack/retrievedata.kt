@@ -17,6 +17,9 @@ class retrievedata : AppCompatActivity() {
         binding = ActivityRetrievedataBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.title = ""
+
         binding.searchButton.setOnClickListener {
             val searchPackage : String = binding.searchPackage.text.toString()
             if  (searchPackage.isNotEmpty()){

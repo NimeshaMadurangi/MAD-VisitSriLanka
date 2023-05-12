@@ -12,7 +12,3 @@ Nimesha Karunarathna
 Naveen Jayaneththi  
 Ruvini Ubeysinghe  
 Sadil Dissanayaka
-
-https://github.com/NimeshaMadurangi/MAD-VisitSriLanka/assets/99236417/fd678dfc-995f-4fa2-8a38-e43d08934278
-
-
